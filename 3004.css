@@ -33,7 +33,10 @@ html {
 .holder {
     text-align: center;
     position: absolute;
-    background: url('img/geese-d.jpg') center center/cover no-repeat;
+    background-image: url('img/geese-d.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 519px;
     height: 333px;
     top: 50%;

@@ -18,6 +18,8 @@ const task = document.querySelector('#task');
 // инпут для ввода ответа
 const input = document.querySelector('#input');
 
+const holder = document.querySelector('.holder');
+
 // обработчик клика на кнопку «ответить»
 button.addEventListener('click', function () {
     // считываем ответ, который ввел пользователь
@@ -82,7 +84,7 @@ function arbitraryRandom(min, max) {
 // функция с запуском таймера
 function startTimer() {
     // начальное значение таймера в секундах
-    let timer = 30;
+    let timer = 60;
     // генерируем вопрос
     generateTask();
 
@@ -107,3 +109,27 @@ function startTimer() {
 
 // запустить таймер
 startTimer();
+
+
+//выбрать рандомное изображение для background
+
+
+const bgArray = [
+
+    'geese.jpg',
+    'geese-a.jpg',
+    'geese-b.jpg',
+    'geese-c.jpg',
+    'geese-d.jpg'
+]
+
+const getRandomEl = (arr) => {
+    const idx = Math.floor(Math.random() * arr.length);
+    return arr[idx];
+}
+
+const generateBg = () => 
+{
+    holder.style.backgroundImage = `url(img/${getRandomEl(bgArray)})`
+}
+generateBg();
