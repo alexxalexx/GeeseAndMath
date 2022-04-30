@@ -49,16 +49,16 @@ button.addEventListener('click', function () {
 function setFeedback(status = 'correct') {
     switch (status) {
         case 'correct':
-            feedback.textContent = `HONK!`;
+            feedback.textContent = `Correct!`;
             feedback.style.color = 'rgb(142, 180, 60)';
             input.value = '';
             break;
         case 'incorrect':
             feedback.style.color = 'red';
-            feedback.textContent = `honk...`;
+            feedback.textContent = `Incorrect`;
             break;
         case 'out-of-time':
-            feedback.textContent = `honk honk!`;
+            feedback.textContent = `Time is out!`;
             feedback.style.color = 'white';
             button.disabled = true;
             break;
@@ -118,9 +118,11 @@ const bgArray = [
 
     'geese.jpg',
     'geese-a.jpg',
-    'geese-b.jpg',
     'geese-c.jpg',
-    'geese-d.jpg'
+    'geese-d.jpg',
+    'geese-e.jpg',
+    'geese-f.jpg',
+    'geese-g.jpg'
 ]
 
 const getRandomEl = (arr) => {
