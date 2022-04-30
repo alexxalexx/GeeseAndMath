@@ -58,7 +58,7 @@ function setFeedback(status = 'correct') {
             feedback.textContent = `Incorrect`;
             break;
         case 'out-of-time':
-            feedback.textContent = `Time is out!`;
+            feedback.textContent = `Well done!`;
             feedback.style.color = 'white';
             button.disabled = true;
             break;
@@ -118,11 +118,14 @@ const bgArray = [
 
     'geese.jpg',
     'geese-a.jpg',
+    'geese-b.jpg',
     'geese-c.jpg',
     'geese-d.jpg',
     'geese-e.jpg',
     'geese-f.jpg',
-    'geese-g.jpg'
+    'geese-g.jpg',
+    'geese-h.jpg',
+    'geese-i.jpg'
 ]
 
 const getRandomEl = (arr) => {
